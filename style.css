@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-primary: black;
+  --ff-button: #065E7C;
+  --ff-primary: white;
+  --ff-source: #06181C;
+  --ff-table: #092D38;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--bg-primary);
+  font-family: sans-serif;
+}
+
+header {
+  margin-top: 11.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+header .search{
+  display: flex;
+  gap: 1rem;
+}
+
+header input {
+  width: 38rem;
+  background-color: var(--ff-source);
+  padding: 1.6rem;
+
+  border: none;
+  border-radius: 0.5rem;
+}
+
+header button {
+  gap: 0.7rem;
+  display: flex;
+  align-items: center;
+
+  color: var(--ff-primary);
+  background-color: var(--ff-button);
+  padding: 1.2rem 3.2rem;
+
+  border: none;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header button:hover{
+  background-color: var(--ff-primary);
+  color: var(--ff-button);
+  cursor: pointer;
+
+
+}
+
+button:hover path {
+  fill: var(--ff-button);
+}
+
+header input[type=search] {
+  color: #7C7C8A;
+}
+
+main {
+display: flex;
+justify-content: center;
+}
+
+  table {
+    margin-top: 8.7rem;
+    width: 107rem;
+    border-collapse: collapse;
+  }
+  
+  table * {
+    font-size: 1.4rem;
+    color: var(--ff-primary);
+  }
+  
+  table th {
+    background: var(--ff-table);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.5rem;
+  }
+  
+  table th:first-child {
+    border-top-left-radius: .5rem;
+  }
+  
+  table th:last-child {
+    border-top-right-radius: .5rem;
+  }
+  
+  table tr:nth-child(even) {
+    background: var(--ff-table);
+  }
+  
+  table tr:nth-child(odd) {
+    background: var(--ff-source);
+  }
+  
+  table td {
+    padding: 1.5rem;
+    text-align: left;
+  }
+  
+  td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  td.user img {
+    width: 5rem;
+    height: 5rem;
+    
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  td.user a {
+    text-decoration: none;
+  }
+  
+  td.user a p {
+    font-weight: bold;
+  }
+  
+  td .remove {
+    background: none;
+    border: none;
+  
+    color: #F75A68;
+    cursor: pointer;
+    font-weight: bold;
+  }
